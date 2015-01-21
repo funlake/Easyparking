@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/spotstep2tab"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/Mainbg"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/gbutton"
+            android:src="@drawable/back" />
+        <TextView
+            android:id="@+id/spotstep2_title"
+            style="@style/BarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@id/back"
+            android:text="@string/action_spot_confirm" />
+
+        <Button
+            android:id="@+id/addspot_save"
+            style="@style/ButtonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gbutton"
+            android:text="@string/save" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:background="#DDD"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/FormLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="right|center"
+                android:text="@string/latlng" />
+
+            <EditText
+                android:id="@+id/curpoint"
+                style="@style/Input"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="7"
+                android:background="@drawable/form_input_left_border"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/FormLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="right|center"
+                android:text="@string/address" />
+
+            <EditText
+                android:id="@+id/curpos"
+                style="@style/Input"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="7"
+                android:background="@drawable/form_input_left_border"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/FormLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="right|center"
+                android:text="@string/parking_code" />
+
+            <EditText
+                android:id="@+id/parking_code"
+                style="@style/Input"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="7"
+                android:background="@drawable/form_input_left_border"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/FormLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="right|center"
+                android:text="@string/availableTime" />
+
+            <EditText
+                android:id="@+id/available_time"
+                style="@style/Input"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="7"
+                android:background="@drawable/form_input_left_border"
+                android:inputType="textMultiLine"
+                android:text="00:00-23:59" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/DescLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/DescText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/availableTimeDesc" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/FormLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp" >
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="right|center"
+                android:text="@string/desc" />
+
+            <EditText
+                android:id="@+id/desc"
+                style="@style/Input"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="7"
+                android:background="@drawable/form_input_left_border"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

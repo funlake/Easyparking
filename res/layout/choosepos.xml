@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/parkingab"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/Mainbg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/gbutton"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/parking_title"
+            style="@style/BarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+			android:gravity="center"
+            android:layout_toRightOf="@id/back"
+            android:text="@string/action_parking_title" />
+
+        <ToggleButton
+            android:id="@+id/toggleApply"
+            style="@style/ButtonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gbutton"
+            android:drawableLeft="@drawable/search"
+            android:onClick="onToggleApplyClick"
+            android:textOff="@string/search"
+            android:textOn="@string/parking_apply_cancel" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90" >
+
+        <com.amap.api.maps2d.MapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <LinearLayout
+            android:id="@+id/options"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/map"
+            android:background="#E0CCCCCC"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Label"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:text="@string/parking_area" />
+
+            <Spinner
+                android:id="@+id/meter_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+
+            <TextView
+                style="@style/Label"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:text="@string/parking_time" />
+
+            <TextView
+                android:id="@+id/parking_time_from"
+                style="@style/Timeshow"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center" />
+
+            <TextView
+                style="@style/Label"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:text="@string/parking_to" />
+
+            <TextView
+                android:id="@+id/parking_time_to"
+                style="@style/Timeshow"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="4dp"
+                android:gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

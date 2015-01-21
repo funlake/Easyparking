@@ -1,0 +1,256 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="TextTheme" parent="Theme.AppCompat.Light">
+
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:textColor">#FF00FF</item>
+    </style>
+    <!-- Application theme. -->
+    <style name="Base" parent="Theme.AppCompat.Light">
+        <item name="android:activatedBackgroundIndicator">@drawable/list_activated_background</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:actionModeCloseDrawable">@android:drawable/ic_menu_revert</item>
+        <item name="android:subtitleTextStyle">@style/BarTitle</item>
+        <item name="android:actionModeBackground">@color/Highlight</item>
+    </style>
+
+    <style name="Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowAnimationStyle">@style/SlideRightLeft</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="RatingBarSmall" parent="@android:style/Widget.RatingBar">         <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+    </style>
+
+    <style name="Text">
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="NormalTitle">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:shadowColor">#8B8E86</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="BigTitle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:shadowColor">#8B8E86</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="BarTitle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="MenuTitle">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:shadowColor">#8B8E86</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ButtonTitle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:shadowColor">#8B8E86</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="RowTitle">
+        <item name="android:textColor">@color/Mainbg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:shadowColor">#fff</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RowDesc">
+        <item name="android:textColor">@color/Grey</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:shadowColor">#fff</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Status">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:shadowColor">#000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Label">
+        <item name="android:textColor">#FF531A</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:shadowColor">#FFF</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Label2">
+        <item name="android:textColor">#FF531A</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:shadowColor">#FFF</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="FormLabel">
+        <item name="android:textColor">@color/Mainbg</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:shadowColor">#fff</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Timeshow">
+        <item name="android:textColor">@color/Mainbg</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:shadowColor">#FFF</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="FormLine">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:background">#FFF</item>
+        <item name="android:minHeight">45dp</item>
+    </style>
+
+    <style name="DescLine">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:minHeight">25dp</item>
+    </style>
+
+    <style name="DescText">
+        <item name="android:textColor">@color/Highlight</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:shadowColor">#FFF</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Input">
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="AnimSlideBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom_out</item>
+    </style>
+    <style name="AnimSlideRightLeft" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_left_out</item>
+    </style>
+
+    <style name="AnimSlideRightRight" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="AnimAlphaInOut" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/alpha_out</item>
+    </style>
+
+    <style name="SlideRightLeft" parent="Theme.AppCompat.Light">
+        <item name="android:activatedBackgroundIndicator">@drawable/list_activated_background</item>
+        <item name="android:windowAnimationStyle">@style/AnimSlideRightLeft</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+
+        <item name="android:actionModeCloseDrawable">@android:drawable/ic_menu_revert</item>
+        <item name="android:subtitleTextStyle">@style/BarTitle</item>
+        <item name="android:actionModeBackground">@color/Highlight</item>
+    </style>
+
+    <style name="SlideRightRight" parent="Theme.AppCompat.Light">
+        <item name="android:activatedBackgroundIndicator">@drawable/list_activated_background</item>
+        <item name="android:windowAnimationStyle">@style/AnimSlideRightRight</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:actionModeCloseDrawable">@android:drawable/ic_menu_revert</item>
+        <item name="android:subtitleTextStyle">@style/BarTitle</item>
+        <item name="android:actionModeBackground">@color/Highlight</item>
+    </style>
+
+</resources>

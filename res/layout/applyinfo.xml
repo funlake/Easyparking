@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/applydetailbanner"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/Mainbg"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/gbutton"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/parking_title"
+            style="@style/BarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/back"
+            android:gravity="center"
+            android:text="@string/action_apply_detail" />
+
+        <Button
+            android:id="@+id/remove"
+            style="@style/ButtonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gbutton"
+            android:text="@string/remove" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:background="@color/Lightgrey"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/FormLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="right|center"
+                android:text="@string/address" />
+
+            <EditText
+                android:id="@+id/address"
+                style="@style/Input"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="7"
+                android:background="@drawable/form_input_left_border"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/FormLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="right|center"
+                android:text="@string/parking_period_label" />
+
+            <EditText
+                android:id="@+id/period"
+                style="@style/Input"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="7"
+                android:background="@drawable/form_input_left_border"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/FormLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="right|center"
+                android:text="@string/spot_owner_label" />
+
+            <EditText
+                android:id="@+id/spot_owner"
+                style="@style/Input"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="7"
+                android:background="@drawable/form_input_left_border"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <!--
+             <LinearLayout
+            style="@style/FormLine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/FormLabel"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="3"
+                android:gravity="right|center"
+                android:text="@string/success_count_label" />
+
+            <EditText
+                android:id="@+id/success_count"
+                style="@style/Input"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="7"
+                android:background="@drawable/form_input_left_border"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none" />
+        </LinearLayout>
+        -->
+
+        <Button
+            android:id="@+id/view_comment"
+            style="@style/ButtonTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bgpurple"
+            android:padding="8dp"
+            android:text="@string/view_comment" />
+
+        <Button
+            android:id="@+id/start_parking"
+            style="@style/ButtonTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bgorange"
+            android:padding="8dp"
+            android:text="@string/start_parking"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/stop_parking"
+            style="@style/ButtonTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bgred"
+            android:padding="8dp"
+            android:text="@string/stop_parking"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/add_comment"
+            style="@style/ButtonTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bgred"
+            android:padding="8dp"
+            android:text="@string/add_comment"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

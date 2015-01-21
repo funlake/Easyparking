@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/spotapplybanner"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/Mainbg"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/gbutton"
+            android:src="@drawable/back" />
+
+        <TextView
+            style="@style/BarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/back"
+            android:gravity="center"
+            android:text="@string/action_spotapply_title" />
+
+        <!--
+             <Button
+            android:id="@+id/apply_confirm"
+            style="@style/ButtonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gbutton"
+            android:drawableLeft="@drawable/tick"
+            android:text="@string/agree" />
+
+        <Button
+            android:id="@+id/apply_reject"
+            style="@style/ButtonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gbutton"
+            android:layout_toLeftOf="@id/apply_confirm"
+            android:text="@string/reject" />
+        -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        android:background="@color/Lightgrey" >
+
+        <ListView
+            android:id="@+id/spotapplylist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:divider="@color/Lightgrey"
+            android:dividerHeight="6dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/Lightgrey"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/addressinfo"
+            style="@style/Label"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

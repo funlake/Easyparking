@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/spotbanner"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:background="@color/Mainbg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/BarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/action_myspot_title" />
+
+        <Button
+            android:id="@+id/addspot"
+            style="@style/ButtonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gbutton"
+            android:text="@string/addspot" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="89"
+        android:background="@color/Lightgrey"
+        android:orientation="vertical" >
+
+        <com.markupartist.android.widget.PullToRefreshListView
+            android:id="@+id/myspotslist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:divider="@color/Lightgrey"
+            android:dividerHeight="6dp" />
+    </LinearLayout>
+
+</LinearLayout>

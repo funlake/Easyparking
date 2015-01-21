@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/spotbanner"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@color/Mainbg"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/gbutton"
+            android:src="@drawable/back" />
+        <TextView
+            style="@style/BarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_toRightOf="@id/back"
+            android:text="@string/action_shop_title" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:background="@color/Lightgrey" >
+
+        <com.markupartist.android.widget.PullToRefreshListView
+            android:id="@+id/pointshoplist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+			android:layout_marginTop="6dp"
+			android:layout_marginBottom="6dp"
+            android:divider="@color/Lightgrey"
+            android:dividerHeight="6dp" />
+    </LinearLayout>
+
+</LinearLayout>

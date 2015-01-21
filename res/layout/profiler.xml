@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/spotstep2tab"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11"
+        android:background="@color/Mainbg"
+        android:gravity="left|center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/spotstep2_title"
+            style="@style/BarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/action_setting" />
+
+        <Button
+            android:id="@+id/userinfo_save"
+            style="@style/ButtonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/gbutton"
+            android:text="@string/save" />
+        <Button
+            android:id="@+id/update"
+            style="@style/ButtonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/userinfo_save"
+            android:background="@drawable/gbutton"
+            android:text="@string/refresh" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="89"
+        android:background="@color/Lightgrey"
+        android:orientation="vertical" >
+
+        <ScrollView
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/FormLine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/FormLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3"
+                        android:gravity="right|center"
+                        android:text="@string/username" />
+
+                    <EditText
+                        android:id="@+id/username"
+                        style="@style/Input"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="7"
+                        android:background="@drawable/form_input_left_border"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="none" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/FormLine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/FormLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3"
+                        android:gravity="right|center"
+                        android:text="@string/phone" />
+
+                    <EditText
+                        android:id="@+id/phone"
+                        style="@style/Input"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="7"
+                        android:background="@drawable/form_input_left_border" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/DescLine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center" >
+
+                    <TextView
+                        style="@style/DescText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phone_desc" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/FormLine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/FormLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3"
+                        android:gravity="right|center"
+                        android:text="@string/points" />
+
+                    <EditText
+                        android:id="@+id/point"
+                        style="@style/Input"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="7"
+                        android:background="@drawable/form_input_left_border"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:inputType="none" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/FormLine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/FormLabel"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="3"
+                        android:gravity="right|center"
+                        android:text="@string/city" />
+
+                    <EditText
+                        android:id="@+id/city"
+                        style="@style/Input"
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="7"
+                        android:background="@drawable/form_input_left_border" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/DescLine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center" >
+
+                    <TextView
+                        style="@style/DescText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city_desc" >
+                    </TextView>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/point_exchange"
+                    style="@style/ButtonTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bgpurple"
+                    android:padding="8dp"
+                    android:text="@string/points_exchange" />
+
+                <Button
+                    android:id="@+id/logout"
+                    style="@style/ButtonTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/bgred"
+                    android:padding="8dp"
+                    android:text="@string/logout" />
+                
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

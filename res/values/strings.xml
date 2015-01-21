@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">停车易</string>
+    <string name="login">登陆</string>
+    <string name="register">注册</string>
+    <string name="want_toregister">注册新账号</string>
+    <string name="save">保存</string>
+    <string name="update">更新</string>
+    <string name="confirm">确定</string>
+    <string name="confirm2">确认</string>
+    <string name="cancel">取消</string>
+    <string name="agree">同意</string>
+     <string name="reject">拒绝</string>
+    <string name="search">搜索</string>
+    <string name="apply">申请</string>
+    <string name="addapply">申请车位</string>
+    <string name="addspot">添加车位</string>
+    <string name="action_settings">设置</string>
+    <string name="action_myapply_title">我的停车申请</string>
+	<!-- action bar text -->
+	<string name="action_parking_title">选择停车区域</string>
+	<string name="action_myspot_title">我的停车位</string>
+	<string name="action_spotapply_title">车位申请</string>
+	<string name="action_apply_detail">申请详情</string>
+	<string name="action_comment">评论</string>
+	<string name="action_spot_detail">车位详情</string>
+	<string name="action_shop_title">积分兑换商城</string>
+	<string name="myapply_title">我的申请</string>
+	<!-- parking options area -->
+	<string name="parking_area">范围在</string>
+	<string name="parking_time">时间从</string>
+	<string name="parking_to">至</string>
+	<string name="parking_apply">请求</string>
+	<string name="parking_apply_cancel">取消</string>
+	<string name="parking_apply_start">开始</string>
+	<string name="parking_apply_stop">结束</string>
+	<string name="add">添加</string>
+	<string name="refresh">刷新</string>
+	<string name="remove">删除</string>
+	<string name="action_spot_choose">选择停车位地点</string>
+	<string name="spot_nextstep">下一步</string>
+	<string name="action_spot_confirm">确定停车位</string>
+	<string name="action_setting">我的设置</string>
+	<string name="address">地址*</string>
+	<string name="latlng">坐标*</string>
+	<string name="parking_code">车位编码*</string>
+	<string name="parking_code_show">车位编码:</string>
+	<string name="lnglat_change">更换地址</string>
+	<string name="apply_amount">当前有效申请:</string>
+	<string name="listenZone">侦听范围</string>
+	<string name="availableTime">有效时段</string>
+	<string name="availableTimeDesc">*您可自由设置多个有效时段,请使用分号作为分隔符,比如"13:00-14:00;16:00-18:00"</string>
+	<string name="desc">描述</string>
+	<!--  bottom menu -->
+	<string name="menu_parking">我要停车</string>
+	<string name="menu_myspot">我的车位</string>
+	<string name="menu_apply">申请车位</string>
+	<string name="menu_setting">用户信息</string>
+	
+	<string name="not_found_address_unsaveable">地址错误,无法保存记录(请确认网络是否开启)</string>
+	
+	<!-- spot status -->
+	<string name="spot_state_normal">开放</string>
+	<string name="spot_state_applying">待确认</string>
+	<string name="spot_state_waitforconfirm">已同意</string>
+	<string name="spot_state_approved">停车中</string>
+	<string name="spot_state_success">成功</string>
+	<string name="spot_state_fail">拒绝</string>
+	<string name="spot_state_expired">过期</string>
+	<!-- related apply state -->
+	
+	<string name="apply_state_normal">未申请</string>
+	<string name="apply_state_applying">申请中</string>
+	<string name="apply_state_waitforconfirm">已通过</string>
+	<string name="apply_state_approved">停车中</string>
+	<string name="apply_state_success">成功</string>
+	<string name="apply_state_fail">拒绝</string>
+	<string name="apply_state_expired">过期</string>
+			
+	<string name="action_searchspot_title">车位列表</string>
+	
+	<string name="net_not_available">无法连接网络,请检查您的网络设置</string>
+	<string name="loading_data">载入数据中...</string>
+	
+	<string name="input_username">请输入用户名</string>
+	<string name="input_password">请输入密码</string>
+	<string name="input_repassword">请再输入一次密码进行确认</string>
+	<string name="input_phone">请输入电话号码,方便与其他用户沟通</string>
+	<string name="welcome_login">欢迎登录停车易</string>
+	<string name="welcome_register">注册停车易</string>
+	<string name="username">用户名</string>
+	<string name="phone">手机号码</string>
+	<string name="phone_desc">*填写手机号码,将方便申请人或车位主与您联系</string>
+	<string name="city">城区</string>
+	<string name="city_desc">*地图默认显示的位置(示例:广东省广州市海珠区)</string>
+	<string name="input_city">所属城区(示例:广东省广州市海珠区)</string>
+	<string name="points">积分</string>
+	<string name="points_exchange">积分兑换</string>
+	<string name="exchange">兑换</string>
+	<string name="logout">登出</string>
+	
+	<string name="parking_period">停车时间:</string>
+	<string name="parking_period_label">停车时间*</string>
+	<string name="spot_owner">车位主:</string>
+	<string name="spot_owner_label">车位主</string>
+	<string name="success_count">历史停车次数:</string>
+	<string name="success_count_label">历史停车</string>
+	
+	<string name="view_apply">查看申请</string>
+	<string name="view_comment">查看评价</string>
+	<string name="view_map">查看地图</string>
+	<string name="add_comment">点评</string>
+	<string name="start_parking">开始停车</string>
+	<string name="stop_parking">结束停车</string>
+	
+	<string name="attitude">评价</string>
+	
+	<string name="all">所有</string>
+	<string name="good">好评</string>
+	<string name="soso">中评</string>
+	<string name="bad">差评</string>
+</resources>

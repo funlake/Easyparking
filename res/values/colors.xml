@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <!--  main colors -->
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#3d3b4f</color>
+    <color name="Grey">#797874</color>
+    <color name="Lightgrey">#EEEEEE</color>
+    <color name="Mainbg">#313131</color>
+    <color name="OrangeLight">#FFFFFF</color>
+    <color name="OrangeDark">#424C50</color>
+    <color name="Success">#218361</color>
+    <color name="Fail">#d9534f</color>
+    <color name="Alert">#d9534f</color>
+    <color name="Info">#269abc</color>
+    <color name="Highlight">#FF531A</color>
+    <color name="Highlight_dark">#c83c23</color>
+    <color name="Status_normal">#218361</color>
+    <color name="Status_applying">#269abc</color>
+    <color name="Status_waitforconfirm">#eea236</color>
+    <color name="Status_approved">#d9534f</color>
+    <color name="Status_success">#218361</color>
+    <color name="Status_fail">#424C50</color>
+    <color name="Status_expired">#5F605B</color>
+    <color name="Comment_good">#218361</color>
+    <color name="Comment_soso">#eea236</color>
+    <color name="Comment_bad">#424C50</color>
+</resources>
