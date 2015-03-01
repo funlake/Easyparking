@@ -82,14 +82,16 @@ public class SearchedspotActivity extends BaseActivity {
 							int position, long id) {
 						// TODO Auto-generated method stub
 						searchspotslist.setItemChecked(position, true);
-//						String spot_id = getColDataByKey(position, "_id");
-//						Intent intent = new Intent(SearchedspotActivity.this,
-//								SearchedspotinfoActivity.class);
-//						intent.putExtra("spot_id", spot_id);
-//						intent.putExtra("beginning", beginning);
-//						intent.putExtra("end", end);
-//						intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-//						startActivity(intent);
+						String spot_id = getColDataByKey(position, "_id");
+						Intent intent = new Intent(SearchedspotActivity.this,
+								SearchedspotinfoActivity.class);
+						intent.putExtra("spot_id", spot_id);
+						intent.putExtra("beginning", beginning);
+						intent.putExtra("end", end);
+						intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+						startActivity(intent);
+						//finish();
+						//sid = getColDataByKey(position, "_id");
 
 					}
 				});
@@ -199,9 +201,6 @@ public class SearchedspotActivity extends BaseActivity {
 		public TextView address;
 		public TextView owner;
 		public TextView success_count;
-		public TextView desc;
-		public Button apply;
-		public Button view_comment;
 		// public TextView state;
 	}
 
@@ -241,11 +240,7 @@ public class SearchedspotActivity extends BaseActivity {
 				// JSONObject loc;
 				holder.address = (TextView) convertView
 						.findViewById(R.id.address);
-				holder.owner = (TextView) convertView.findViewById(R.id.owner);
-				holder.desc  = (TextView) convertView.findViewById(R.id.desc);
-				holder.apply = (Button) convertView.findViewById(R.id.apply_btn);
-				holder.view_comment = (Button) convertView.findViewById(R.id.view_comment_btn);
-			
+				//holder.owner = (TextView) convertView.findViewById(R.id.owner);
 				//holder.success_count = (TextView) convertView.findViewById(R.id.success_count);
 				// holder.state = (TextView)
 				// convertView.findViewById(R.id.status);
@@ -258,66 +253,7 @@ public class SearchedspotActivity extends BaseActivity {
 				row = listdata.getJSONObject(position);
 				JSONObject userinfo = row.getJSONObject("userinfo");
 				holder.address.setText(row.getString("address")+"("+row.getString("code")+")");
-				holder.owner.setText(userinfo.getString("user"));
-				holder.desc.setText(row.getString("desc"));
-				final String spot_id = row.getString("_id");
-				holder.view_comment.setOnClickListener(new View.OnClickListener() {
-					
-					@Override
-					public void onClick(View v) {
-						// TODO Auto-generated method stub
-						Intent intent = new Intent(SearchedspotActivity.this,CommentActivity.class);
-						intent.putExtra("spot_id", spot_id);
-						intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-						startActivity(intent);
-					}
-				});
-				holder.apply.setOnClickListener(new View.OnClickListener() {
-
-					@Override
-					public void onClick(View v) {
-						// TODO Auto-generated method stub
-						showCfmMsg("警告", "确定申请此车位？",
-						// if user confirm to delete
-								new View.OnClickListener() {
-
-									@Override
-									public void onClick(View v) {
-										// TODO Auto-generated method stub
-										confirmAlg.cancel();
-										new HttpRequest(new HttpCallback() {
-
-											@Override
-											public void run(String res) {
-												// TODO Auto-generated method stub
-												try {
-													JSONObject r = new JSONObject(res);
-													if ("error".equals(r
-															.getString("code"))) {
-														showErrorMessage(r
-																.getString("msg"));
-													} else {
-														showSuccessMessage(r
-																.getString("msg"));
-													}
-												} catch (JSONException e) {
-													// TODO Auto-generated catch block
-													showErrorMessage(e.getMessage());
-												}
-												
-											}
-
-										}).execute(
-												"/apply_add/"
-														+ Helper.getUid(SearchedspotActivity.this),
-												"POST", "spot_id=" + spot_id
-														+ "&beginning=" + beginning
-														+ "&end=" + end);
-									}
-								}, CFM_CANCELCB);
-						
-					}
-				});
+				//holder.owner.setText(userinfo.getString("user"));
 				//holder.success_count.setText(row.getInt("success_count")+"");
 				//holder.code.setText(row.getString("code"));
 				// holder.state.setBackgroundColor(resources.getColor(resources

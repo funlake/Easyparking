@@ -474,7 +474,7 @@ public class ChooseposActivity extends BaseActivity implements LocationSource,
 				return;
 			}
 			else{
-				parkingTitle.setText("正在搜索停车位...");
+				parkingTitle.setText("搜索停车位...");
 				view.setBackgroundDrawable(ChooseposActivity.this.getResources()
 						.getDrawable(R.drawable.toggle_click));
 				// mUiSettings.setAllGesturesEnabled(false);
@@ -486,7 +486,7 @@ public class ChooseposActivity extends BaseActivity implements LocationSource,
 			// Disable vibrate
 			parkingTitle.setText("选择停车区域");
 			view.setBackgroundDrawable(ChooseposActivity.this.getResources()
-					.getDrawable(R.drawable.bgmain));
+					.getDrawable(R.drawable.bghl));
 			// mUiSettings.setAllGesturesEnabled(true);
 			mUiSettings.setZoomControlsEnabled(true);
 			stopSchedule();

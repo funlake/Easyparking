@@ -112,9 +112,9 @@ public class MainActivity extends BaseActivity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				pager.setCurrentItem(0);
-				view1.setBackgroundColor(resource.getColor(R.color.Highlight));
-				view2.setBackgroundColor(resource.getColor(R.color.Mainbg));
-				view3.setBackgroundColor(resource.getColor(R.color.Mainbg));
+				view1.setBackgroundDrawable(resource.getDrawable(R.drawable.bghl));
+				view2.setBackgroundDrawable(resource.getDrawable(R.drawable.bg));
+				view3.setBackgroundDrawable(resource.getDrawable(R.drawable.bg));
 				//view4.setBackgroundColor(resource.getColor(R.color.Mainbg));
 			}
 		});
@@ -127,9 +127,9 @@ public class MainActivity extends BaseActivity {
 				// TODO Auto-generated method stub
 				pager.setCurrentItem(1);
 				Config.myspot.initialize();
-				view1.setBackgroundColor(resource.getColor(R.color.Mainbg));
-				view2.setBackgroundColor(resource.getColor(R.color.Highlight));
-				view3.setBackgroundColor(resource.getColor(R.color.Mainbg));
+				view1.setBackgroundDrawable(resource.getDrawable(R.drawable.bg));
+				view2.setBackgroundDrawable(resource.getDrawable(R.drawable.bghl));
+				view3.setBackgroundDrawable(resource.getDrawable(R.drawable.bg));
 				//view4.setBackgroundColor(resource.getColor(R.color.Mainbg));
 			}
 		});
@@ -140,9 +140,9 @@ public class MainActivity extends BaseActivity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				pager.setCurrentItem(2);
-				view1.setBackgroundColor(resource.getColor(R.color.Mainbg));
-				view2.setBackgroundColor(resource.getColor(R.color.Mainbg));
-				view3.setBackgroundColor(resource.getColor(R.color.Highlight));
+				view1.setBackgroundDrawable(resource.getDrawable(R.drawable.bg));
+				view2.setBackgroundDrawable(resource.getDrawable(R.drawable.bg));
+				view3.setBackgroundDrawable(resource.getDrawable(R.drawable.bghl));
 				//view4.setBackgroundColor(resource.getColor(R.color.Mainbg));
 			}
 		});

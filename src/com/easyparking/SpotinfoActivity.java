@@ -106,7 +106,7 @@ public class SpotinfoActivity extends BaseActivity {
 				startActivity(intent);
 			}
 		});
-		update = (Button) findViewById(R.id.update);
+/*		update = (Button) findViewById(R.id.update);
 		update.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -135,7 +135,7 @@ public class SpotinfoActivity extends BaseActivity {
 				}).execute("/spot_update/"+spot_id, "POST",
 						"desc=" + desc.getText().toString());
 			}
-		});
+		});*/
 		remove = (Button) findViewById(R.id.remove);
 		remove.setOnClickListener(new View.OnClickListener() {
 

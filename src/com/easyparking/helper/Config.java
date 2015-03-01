@@ -12,9 +12,9 @@ import com.easyparking.ProfilerActivity;
 
 public class Config {
 
-	public static final String Server_URL = "http://192.168.0.103:9527/";
+	//public static final String Server_URL = "http://192.168.0.103:9527/";
 	//official api
-	//public static final String Server_URL = "http://115.28.72.145:9527/";
+	public static final String Server_URL = "http://115.28.72.145:9527/";
 	//address
 	public static final LatLng BEIJING = new LatLng(39.90403, 116.407525);// 北京市经纬度
 	public static final LatLng ZHONGGUANCUN = new LatLng(39.983456, 116.3154950);// 北京市中关村经纬度

@@ -38,7 +38,7 @@ public class MyapplyActivity extends BaseActivity {
 		resources = getResources();
 		initStatusLang();
 		initList();
-		initBtns();
+		initBtn();
 		Config.myapply = this;
 	}
 	
@@ -51,7 +51,7 @@ public class MyapplyActivity extends BaseActivity {
 		super.onDestroy();
 	}
 	
-	private void initBtns() {
+	private void initBtn() {
 		addapply = (Button) findViewById(R.id.addapply);
 		addapply.setOnClickListener(new View.OnClickListener() {
 
@@ -69,7 +69,7 @@ public class MyapplyActivity extends BaseActivity {
 
 	private void initList() {
 		myapplylist = (PullToRefreshListView) findViewById(R.id.myapplylist);
-		//myapplylist.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+		myapplylist.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 		myapplylist.setTextFilterEnabled(false);
 		myapplylist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override

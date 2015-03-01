@@ -104,7 +104,7 @@ public class BaseActivity extends Activity {
 				// .withIcon(getResources().getDrawable(R.drawable.icon))
 				.isCancelableOnTouchOutside(true) // def | isCancelable(true)
 				.withDuration(400) // def
-				.withEffect(Effectstype.Sidefill) // def Effectstype.Slidetop
+				.withEffect(Effectstype.RotateBottom) // def Effectstype.Slidetop
 				.withButton1Text("取消") // def gone
 				.withButton2Text("确认") // def gone
 				// .setCustomView(R.layout.custom_view,v.getContext())
@@ -144,7 +144,7 @@ public class BaseActivity extends Activity {
 					.findViewById(R.id.progress_content);
 			WindowManager.LayoutParams lp = loadingDialogWindow.getAttributes();
 			// lp.y = 200;
-			lp.alpha = 0.95f;
+			lp.alpha = 0.7f;
 			loadingDialogWindow.setGravity(Gravity.CENTER);
 			loadingDialogWindow.setAttributes(lp);
 			loadingDialog.setCancelable(false);

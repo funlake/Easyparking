@@ -64,7 +64,7 @@ public class ApplyinfoActivity extends BaseActivity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				setResult(113);
+				setResult(111);
 				finish();
 			}
 		});
@@ -104,8 +104,7 @@ public class ApplyinfoActivity extends BaseActivity {
 									JSONObject r = new JSONObject(res);
 									if ("success".equals(r.getString("code"))) {
 										showSuccessMessage(r.getString("msg"));
-										setResult(111);
-										finish();
+										back.performClick();
 									} else {
 										showErrorMessage(r.getString("msg"));
 									}
@@ -208,8 +207,7 @@ public class ApplyinfoActivity extends BaseActivity {
 												.getString("code"))) {
 											showSuccessMessage(r
 													.getString("msg"));
-											setResult(111);
-											finish();
+											back.performClick();
 										} else {
 											showErrorMessage(r.getString("msg"));
 										}

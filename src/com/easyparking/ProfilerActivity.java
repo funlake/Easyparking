@@ -25,7 +25,6 @@ import com.gitonway.niftydialogeffects.widget.niftydialogeffects.NiftyDialogBuil
 
 public class ProfilerActivity extends BaseActivity implements OnGeocodeSearchListener {
 	private Button logout;
-	private Button shop;
 	private Button save;
 	private Button update;
 	private EditText username;
@@ -53,7 +52,7 @@ public class ProfilerActivity extends BaseActivity implements OnGeocodeSearchLis
 	}
 
 	private void initBtns() {
-		update = (Button) findViewById(R.id.update);
+/*		update = (Button) findViewById(R.id.update);
 		update.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
@@ -61,7 +60,7 @@ public class ProfilerActivity extends BaseActivity implements OnGeocodeSearchLis
 				// TODO Auto-generated method stub
 				initFormData();
 			}
-		});
+		});*/
 		save = (Button) findViewById(R.id.userinfo_save);
 		save.setOnClickListener(new View.OnClickListener() {
 
@@ -70,15 +69,6 @@ public class ProfilerActivity extends BaseActivity implements OnGeocodeSearchLis
 				showProgress("获取城区坐标中...");
 				GeocodeQuery query = new GeocodeQuery(city.getText().toString(), null);// 第一个参数表示地址，第二个参数表示查询城市，中文或者中文全拼，citycode、adcode，
 				geocoderSearch.getFromLocationNameAsyn(query);// 设置同步地理编码请求
-			}
-		});
-		shop = (Button) findViewById(R.id.point_exchange);
-		shop.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				startActivity(new Intent(ProfilerActivity.this,ShopActivity.class));
 			}
 		});
 		logout = (Button) findViewById(R.id.logout);
