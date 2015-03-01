@@ -20,48 +20,48 @@ public final class R {
 		public static final int dialog_padding = 0x7f070000;
 	}
 	public static final class drawable {
-		public static final int btn_press = 0x7f020040;
-		public static final int btn_selector = 0x7f020041;
-		public static final int btn_selector2 = 0x7f020042;
-		public static final int btn_unpress = 0x7f020043;
-		public static final int btn_unpress2 = 0x7f020044;
-		public static final int dialog_bg = 0x7f020048;
-		public static final int ic_launcher = 0x7f02004c;
-		public static final int icon = 0x7f02004e;
+		public static final int btn_press = 0x7f020065;
+		public static final int btn_selector = 0x7f020066;
+		public static final int btn_selector2 = 0x7f020067;
+		public static final int btn_unpress = 0x7f020068;
+		public static final int btn_unpress2 = 0x7f020069;
+		public static final int dialog_bg = 0x7f02006d;
+		public static final int ic_launcher = 0x7f020071;
+		public static final int icon = 0x7f020073;
 	}
 	public static final class id {
-		public static final int alertTitle = 0x7f0b0085;
-		public static final int button1 = 0x7f0b008a;
-		public static final int button2 = 0x7f0b008b;
-		public static final int contentPanel = 0x7f0b0087;
-		public static final int customPanel = 0x7f0b0089;
-		public static final int fadein = 0x7f0b003f;
-		public static final int fall = 0x7f0b0045;
-		public static final int fliph = 0x7f0b0048;
-		public static final int flipv = 0x7f0b0049;
-		public static final int icon = 0x7f0b0026;
-		public static final int main = 0x7f0b0081;
-		public static final int message = 0x7f0b0088;
-		public static final int newspager = 0x7f0b0044;
-		public static final int parentPanel = 0x7f0b0082;
-		public static final int rotatebottom = 0x7f0b004a;
-		public static final int rotateleft = 0x7f0b004b;
-		public static final int shake = 0x7f0b0047;
-		public static final int sidefall = 0x7f0b0046;
-		public static final int slideBottom = 0x7f0b0043;
-		public static final int slideleft = 0x7f0b0041;
-		public static final int slideright = 0x7f0b0040;
-		public static final int slidetop = 0x7f0b0042;
-		public static final int slit = 0x7f0b004c;
-		public static final int title = 0x7f0b0027;
-		public static final int titleDivider = 0x7f0b0086;
-		public static final int title_template = 0x7f0b0084;
-		public static final int topPanel = 0x7f0b0083;
+		public static final int alertTitle = 0x7f090082;
+		public static final int button1 = 0x7f090087;
+		public static final int button2 = 0x7f090088;
+		public static final int contentPanel = 0x7f090084;
+		public static final int customPanel = 0x7f090086;
+		public static final int fadein = 0x7f09003c;
+		public static final int fall = 0x7f090042;
+		public static final int fliph = 0x7f090045;
+		public static final int flipv = 0x7f090046;
+		public static final int icon = 0x7f09002a;
+		public static final int main = 0x7f09007e;
+		public static final int message = 0x7f090085;
+		public static final int newspager = 0x7f090041;
+		public static final int parentPanel = 0x7f09007f;
+		public static final int rotatebottom = 0x7f090047;
+		public static final int rotateleft = 0x7f090048;
+		public static final int shake = 0x7f090044;
+		public static final int sidefall = 0x7f090043;
+		public static final int slideBottom = 0x7f090040;
+		public static final int slideleft = 0x7f09003e;
+		public static final int slideright = 0x7f09003d;
+		public static final int slidetop = 0x7f09003f;
+		public static final int slit = 0x7f090049;
+		public static final int title = 0x7f09002b;
+		public static final int titleDivider = 0x7f090083;
+		public static final int title_template = 0x7f090081;
+		public static final int topPanel = 0x7f090080;
 	}
 	public static final class layout {
-		public static final int activity_main = 0x7f030017;
-		public static final int custom_view = 0x7f030027;
-		public static final int dialog_layout = 0x7f030028;
+		public static final int activity_main = 0x7f030018;
+		public static final int custom_view = 0x7f030028;
+		public static final int dialog_layout = 0x7f030029;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f050000;

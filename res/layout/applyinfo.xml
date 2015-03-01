@@ -9,24 +9,24 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
-        android:background="@color/Mainbg"
-        android:gravity="left|center"
+        android:background="@drawable/bghl"
+        android:gravity="center"
         android:orientation="horizontal" >
 
         <ImageButton
             android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
             android:layout_alignParentLeft="true"
-            android:background="@drawable/gbutton"
+            android:background="@android:color/transparent"
             android:src="@drawable/back" />
 
         <TextView
             android:id="@+id/parking_title"
             style="@style/BarTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_toRightOf="@id/back"
             android:gravity="center"
             android:text="@string/action_apply_detail" />
 
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_alignParentRight="true"
-            android:background="@drawable/gbutton"
+            android:background="@android:color/transparent"
             android:text="@string/remove" />
     </RelativeLayout>
 
@@ -173,7 +173,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="8dp"
-            android:background="@drawable/bgorange"
+            android:background="@drawable/bgblack"
             android:padding="8dp"
             android:text="@string/start_parking"
             android:visibility="gone" />

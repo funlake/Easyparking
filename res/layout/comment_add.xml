@@ -19,7 +19,7 @@
             android:layout_height="fill_parent"
             android:layout_alignParentLeft="true"
             android:background="@drawable/gbutton"
-            android:src="@drawable/back" />
+            android:src="@drawable/bg" />
 
         <TextView
             android:id="@+id/spotstep2_title"

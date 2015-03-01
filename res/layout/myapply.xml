@@ -9,15 +9,14 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="11"
-        android:background="@color/Mainbg"
+        android:background="@drawable/bghl"
         android:gravity="center"
         android:orientation="horizontal" >
 
         <TextView
             style="@style/BarTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_marginLeft="10dp"
             android:gravity="center"
             android:text="@string/action_myapply_title" />
 
@@ -27,8 +26,8 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_alignParentRight="true"
-            android:background="@drawable/gbutton"
-            android:text="@string/addapply" />
+            android:background="@android:color/transparent"
+            android:text="@string/add" />
     </RelativeLayout>
 
     <LinearLayout
@@ -41,8 +40,7 @@
             android:id="@+id/myapplylist"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-			android:layout_marginTop="6dp"
-			android:layout_marginBottom="6dp"
+
             android:divider="@color/Lightgrey"
             android:dividerHeight="6dp" />
     </LinearLayout>
