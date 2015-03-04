@@ -8,26 +8,26 @@ package com.gitonway.niftydialogeffects;
 
 public final class R {
 	public static final class color {
-		public static final int btn_press_color = 0x7f060004;
-		public static final int btn_unpress_color = 0x7f060005;
-		public static final int btn_unpress_color2 = 0x7f060006;
-		public static final int dialog_bg = 0x7f060003;
-		public static final int divider_color = 0x7f060001;
-		public static final int msg_color = 0x7f060002;
-		public static final int text_color = 0x7f060000;
+		public static final int btn_press_color = 0x7f050004;
+		public static final int btn_unpress_color = 0x7f050005;
+		public static final int btn_unpress_color2 = 0x7f050006;
+		public static final int dialog_bg = 0x7f050003;
+		public static final int divider_color = 0x7f050001;
+		public static final int msg_color = 0x7f050002;
+		public static final int text_color = 0x7f050000;
 	}
 	public static final class dimen {
-		public static final int dialog_padding = 0x7f070000;
+		public static final int dialog_padding = 0x7f060000;
 	}
 	public static final class drawable {
-		public static final int btn_press = 0x7f020040;
-		public static final int btn_selector = 0x7f020041;
-		public static final int btn_selector2 = 0x7f020042;
-		public static final int btn_unpress = 0x7f020043;
-		public static final int btn_unpress2 = 0x7f020044;
-		public static final int dialog_bg = 0x7f020048;
-		public static final int ic_launcher = 0x7f02004c;
-		public static final int icon = 0x7f02004e;
+		public static final int btn_press = 0x7f020041;
+		public static final int btn_selector = 0x7f020042;
+		public static final int btn_selector2 = 0x7f020043;
+		public static final int btn_unpress = 0x7f020044;
+		public static final int btn_unpress2 = 0x7f020045;
+		public static final int dialog_bg = 0x7f020049;
+		public static final int ic_launcher = 0x7f02004d;
+		public static final int icon = 0x7f02004f;
 	}
 	public static final class id {
 		public static final int alertTitle = 0x7f0b0085;
@@ -64,9 +64,9 @@ public final class R {
 		public static final int dialog_layout = 0x7f030028;
 	}
 	public static final class string {
-		public static final int app_name = 0x7f050000;
-		public static final int costomview = 0x7f050006;
-		public static final int hello_world = 0x7f050005;
+		public static final int app_name = 0x7f070000;
+		public static final int costomview = 0x7f070002;
+		public static final int hello_world = 0x7f070001;
 	}
 	public static final class style {
 		public static final int AppBaseTheme = 0x7f080000;
