@@ -14,11 +14,11 @@ public final class R {
 		public static final int pull_to_refresh_header_background = 0x7f020058;
 	}
 	public static final class id {
-		public static final int pull_to_refresh_header = 0x7f0b00a8;
-		public static final int pull_to_refresh_image = 0x7f0b00aa;
-		public static final int pull_to_refresh_progress = 0x7f0b00a9;
-		public static final int pull_to_refresh_text = 0x7f0b00ab;
-		public static final int pull_to_refresh_updated_at = 0x7f0b00ac;
+		public static final int pull_to_refresh_header = 0x7f0b00a7;
+		public static final int pull_to_refresh_image = 0x7f0b00a9;
+		public static final int pull_to_refresh_progress = 0x7f0b00a8;
+		public static final int pull_to_refresh_text = 0x7f0b00aa;
+		public static final int pull_to_refresh_updated_at = 0x7f0b00ab;
 	}
 	public static final class layout {
 		public static final int pull_to_refresh_header = 0x7f030031;

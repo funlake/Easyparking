@@ -10,22 +10,22 @@
         android:layout_height="0dp"
         android:layout_weight="10"
         android:background="@color/Mainbg"
-        android:gravity="left|center"
+        android:gravity="center"
         android:orientation="horizontal" >
         <ImageButton
             android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_alignParentLeft="true"
-            android:background="@drawable/gbutton"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
             android:src="@drawable/back" />
         <TextView
             android:id="@+id/spotstep2_title"
             style="@style/BarTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:gravity="center"
-            android:layout_toRightOf="@id/back"
             android:text="@string/action_spot_confirm" />
 
         <Button
@@ -34,7 +34,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_alignParentRight="true"
-            android:background="@drawable/gbutton"
+            android:background="@android:color/transparent"
             android:text="@string/save" />
     </RelativeLayout>
 

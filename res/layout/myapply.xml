@@ -15,9 +15,8 @@
 
         <TextView
             style="@style/BarTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_marginLeft="10dp"
             android:gravity="center"
             android:text="@string/action_myapply_title" />
 
@@ -28,7 +27,7 @@
             android:layout_height="fill_parent"
             android:layout_alignParentRight="true"
             android:background="@drawable/gbutton"
-            android:text="@string/addapply" />
+            android:text="@string/apply" />
     </RelativeLayout>
 
     <LinearLayout

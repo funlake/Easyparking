@@ -18,16 +18,15 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_alignParentLeft="true"
-            android:background="@drawable/gbutton"
+            android:background="@android:color/transparent"
             android:src="@drawable/back" />
 
         <TextView
             android:id="@+id/parking_title"
             style="@style/BarTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="fill_parent"
 			android:gravity="center"
-            android:layout_toRightOf="@id/back"
             android:text="@string/action_parking_title" />
 
         <ToggleButton
@@ -36,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_alignParentRight="true"
-            android:background="@drawable/gbutton"
+            android:background="@android:color/transparent"
             android:drawableLeft="@drawable/search"
             android:onClick="onToggleApplyClick"
             android:textOff="@string/search"

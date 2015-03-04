@@ -476,7 +476,7 @@ public class ChooseposActivity extends BaseActivity implements LocationSource,
 			else{
 				parkingTitle.setText("搜索停车位...");
 				view.setBackgroundDrawable(ChooseposActivity.this.getResources()
-						.getDrawable(R.drawable.toggle_click));
+						.getDrawable(R.drawable.bg));
 				// mUiSettings.setAllGesturesEnabled(false);
 				mUiSettings.setZoomControlsEnabled(false);
 				startSchedule();
