@@ -18,6 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
             android:background="@android:color/transparent"
             android:src="@drawable/back" />
 
@@ -36,7 +37,6 @@
             android:layout_height="fill_parent"
             android:layout_alignParentRight="true"
             android:background="@android:color/transparent"
-            android:drawableLeft="@drawable/search"
             android:onClick="onToggleApplyClick"
             android:textOff="@string/search"
             android:textOn="@string/parking_apply_cancel" />
