@@ -13,6 +13,7 @@
     <string name="agree">同意</string>
      <string name="reject">拒绝</string>
     <string name="search">搜索</string>
+    <string name="search_parking">搜索车位</string>
     <string name="apply">申请</string>
     <string name="addapply">申请车位</string>
     <string name="addspot">添加车位</string>
