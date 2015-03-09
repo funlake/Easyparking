@@ -19,7 +19,6 @@ import android.widget.TextView;
 import com.easyparking.helper.Helper;
 import com.easyparking.helper.IndexViewPager;
 import com.easyparking.helper.Config;
-import com.gitonway.niftydialogeffects.widget.niftydialogeffects.NiftyDialogBuilder;
 import com.igexin.sdk.PushManager;
 
 public class MainActivity extends BaseActivity {
@@ -57,7 +56,7 @@ public class MainActivity extends BaseActivity {
 				PushManager.getInstance().initialize(MainActivity.this.getApplicationContext());
 			//}
 			//refresh myapply and myspot data
-			startRefreshService();
+//			startRefreshService();
 		}
 	}
 
@@ -225,7 +224,7 @@ public class MainActivity extends BaseActivity {
 				Config.scheduleStatus = false;
 				Config.timer.cancel();
 				//PushManager.getInstance().initialize(MainActivity.this.getApplicationContext());
-				stopRefreshService();
+//				stopRefreshService();
 				finish();
 			}
 		},CFM_CANCELCB);
@@ -259,7 +258,7 @@ public class MainActivity extends BaseActivity {
 			//showErrorMessage("is this happen in myspotActivity");
 		}
 		super.onActivityResult(requestCode, resultCode, data);
-		
+		overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
 	}
 	// @Override
 	// public boolean onKeyDown(int keyCode, KeyEvent event) {

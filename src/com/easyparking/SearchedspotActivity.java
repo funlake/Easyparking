@@ -30,7 +30,7 @@ import com.easyparking.helper.HttpRequest;
 import com.markupartist.android.widget.PullToRefreshListView;
 import com.markupartist.android.widget.PullToRefreshListView.OnRefreshListener;
 
-public class SearchedspotActivity extends BaseActivity {
+public class SearchedspotActivity extends DetailActivity {
 	private PullToRefreshListView searchspotslist;
 	private String lng;
 	private String lat;
@@ -89,7 +89,9 @@ public class SearchedspotActivity extends BaseActivity {
 						intent.putExtra("beginning", beginning);
 						intent.putExtra("end", end);
 						intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-						startActivity(intent);
+						startActivityForResult(intent,1111);
+						overridePendingTransition(R.anim.slide_in_right,
+								R.anim.slide_out_left);
 						//finish();
 						//sid = getColDataByKey(position, "_id");
 

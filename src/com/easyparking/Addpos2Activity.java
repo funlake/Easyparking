@@ -25,7 +25,7 @@ import com.easyparking.helper.HttpCallback;
 import com.easyparking.helper.HttpRequest;
 import com.easyparking.helper.Config;
 
-public class Addpos2Activity extends BaseActivity implements
+public class Addpos2Activity extends DetailActivity implements
 		OnGeocodeSearchListener {
 	private GeocodeSearch geocoderSearch;
 	private LatLonPoint latLonPoint;

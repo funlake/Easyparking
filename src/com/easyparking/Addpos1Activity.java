@@ -28,7 +28,7 @@ import com.amap.api.services.geocoder.RegeocodeResult;
 import com.easyparking.helper.Helper;
 import com.easyparking.helper.Config;
 
-public class Addpos1Activity extends BaseActivity implements
+public class Addpos1Activity extends DetailActivity implements
 		OnMapClickListener, OnCameraChangeListener, InfoWindowAdapter ,OnGeocodeSearchListener{
 	public MapView mMapView;
 	private AMap aMap;
@@ -75,7 +75,9 @@ public class Addpos1Activity extends BaseActivity implements
 				// TODO Auto-generated method stub
 				Intent intent = new Intent(Addpos1Activity.this,
 						Addpos2Activity.class);
-				startActivity(intent);
+				startActivityForResult(intent,1222);
+				overridePendingTransition(R.anim.slide_in_right,
+						R.anim.slide_out_left);
 			}
 		});
 		

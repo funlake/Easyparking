@@ -29,7 +29,7 @@ import com.easyparking.helper.Helper;
 import com.easyparking.helper.HttpCallback;
 import com.easyparking.helper.HttpRequest;
 
-public class SpotapplyActivity extends BaseActivity {
+public class SpotapplyActivity extends DetailActivity {
 	private String spot_id;
 	private ListView spotapplylist;
 	private String address;

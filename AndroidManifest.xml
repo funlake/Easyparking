@@ -171,12 +171,10 @@
         <activity
             android:name=".SpotinfoActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/SlideRightLeft"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
             android:name=".SpotmapActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/SlideRightLeft" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".AddposActivity"
             android:screenOrientation="portrait" />
@@ -186,7 +184,6 @@
         <activity
             android:name=".Addpos2Activity"
             android:screenOrientation="portrait"
-            android:theme="@style/SlideRightLeft"
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
             android:name=".ProfilerActivity"
@@ -198,38 +195,31 @@
         <!-- <service android:enabled="true" android:name="com.easyparking.service.RefreshdataService"/> -->
         <activity
             android:name=".SearchedspotActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/SlideRightLeft" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SpotapplyActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/SlideRightLeft" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SearchedspotinfoActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/SlideRightLeft" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ApplyinfoActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/SlideRightLeft" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".LoginActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".RegisterActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/SlideRightLeft" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".CommentActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/SlideRightLeft" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".CommentaddActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ShopActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/SlideRightLeft" />
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait" />

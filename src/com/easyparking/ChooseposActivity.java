@@ -32,6 +32,7 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.amap.api.location.AMapLocation;
@@ -55,16 +56,16 @@ import com.amap.api.maps2d.model.MarkerOptions;
 import com.amap.api.services.geocoder.GeocodeResult;
 import com.amap.api.services.geocoder.GeocodeSearch.OnGeocodeSearchListener;
 import com.amap.api.services.geocoder.RegeocodeResult;
+import com.easyparking.helper.Config;
 import com.easyparking.helper.Helper;
 import com.easyparking.helper.HttpCallback;
 import com.easyparking.helper.HttpRequest;
-import com.easyparking.helper.Config;
 //import com.amapv1.apis.util.Constants;
 //定位所需类库
 //假如用到位置提醒功能，需要import该类
 //如果使用地理围栏功能，需要import如下类
 
-public class ChooseposActivity extends BaseActivity implements LocationSource,
+public class ChooseposActivity extends DetailActivity implements LocationSource,
 		AMapLocationListener, OnMapClickListener, OnCameraChangeListener,
 		OnGeocodeSearchListener, OnMarkerClickListener {
 	public MapView mMapView;
@@ -598,8 +599,9 @@ public class ChooseposActivity extends BaseActivity implements LocationSource,
 	@Override
 	public boolean onMarkerClick(Marker marker) {
 		// TODO Auto-generated method stub
-		// Toast.makeText(ChooseposActivity.this, marker.getTitle(),
-		// Toast.LENGTH_SHORT).show();
+//		 Toast.makeText(ChooseposActivity.this, marker.getTitle(),
+//		 Toast.LENGTH_SHORT).show();
+		//marker.hideInfoWindow();
 		String res = marker.getTitle();
 		if (!res.equals("center")) {
 			// Toast.makeText(ChooseposActivity.this, marker.getTitle(),
@@ -616,8 +618,10 @@ public class ChooseposActivity extends BaseActivity implements LocationSource,
 			intent.putExtra("parking_time",timeFrom.getText()+","+timeTo.getText());
 			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 			startActivityForResult(intent,101);
+			overridePendingTransition(R.anim.slide_in_right,
+					R.anim.slide_out_left);
 		}
-		return false;
+		return true;
 	}
 
 	public void showConfirmApplyDlg(String res,final Marker marker) {
@@ -716,5 +720,12 @@ public class ChooseposActivity extends BaseActivity implements LocationSource,
 		}
 		return true;
 		// return super.onKeyDown(keyCode, event);
+	}
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data){
+		//my spots got returns from add process.
+		//showErrorMessage("is this happen in myspotActivity"+resultCode);
+		super.onActivityResult(requestCode, resultCode, data);
+		overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
 	}
 }

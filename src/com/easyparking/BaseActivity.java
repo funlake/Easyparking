@@ -10,7 +10,6 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
-import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -22,7 +21,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.easyparking.helper.Config;
-import com.easyparking.service.RefreshdataService;
 import com.gitonway.niftydialogeffects.widget.niftydialogeffects.Effectstype;
 import com.gitonway.niftydialogeffects.widget.niftydialogeffects.NiftyDialogBuilder;
 
@@ -274,16 +272,16 @@ public class BaseActivity extends Activity {
 		return content;
 	}
 
-	public void startRefreshService() {
-		// showSuccessMessage("开始刷新服务");
-		Intent intent = new Intent(this, RefreshdataService.class);
-		startService(intent);
-	}
-
-	public void stopRefreshService() {
-		Intent intent = new Intent(this, RefreshdataService.class);
-		stopService(intent);
-	}
+//	public void startRefreshService() {
+//		// showSuccessMessage("开始刷新服务");
+//		Intent intent = new Intent(this, RefreshdataService.class);
+//		startService(intent);
+//	}
+//
+//	public void stopRefreshService() {
+//		Intent intent = new Intent(this, RefreshdataService.class);
+//		stopService(intent);
+//	}
 
 	public void activityLogout() {
 		Config.core = null;

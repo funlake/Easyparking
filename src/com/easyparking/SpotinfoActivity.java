@@ -16,7 +16,7 @@ import com.easyparking.helper.Helper;
 import com.easyparking.helper.HttpCallback;
 import com.easyparking.helper.HttpRequest;
 
-public class SpotinfoActivity extends BaseActivity {
+public class SpotinfoActivity extends DetailActivity {
 	private String spot_id;
 	private String latlng;
 	private EditText address;
@@ -72,7 +72,9 @@ public class SpotinfoActivity extends BaseActivity {
 						CommentActivity.class);
 				intent.putExtra("spot_id", spot_id);
 				intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				startActivity(intent);
+				startActivityForResult(intent,1211);
+				overridePendingTransition(R.anim.slide_in_right,
+						R.anim.slide_out_left);
 			}
 		});
 		view_map = (Button) findViewById(R.id.view_map);
@@ -88,8 +90,10 @@ public class SpotinfoActivity extends BaseActivity {
 				intent.putExtra("address", address.getText().toString());
 				intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
-				startActivity(intent);
+				startActivityForResult(intent,1211);
 				hideProgress();
+				overridePendingTransition(R.anim.slide_in_right,
+						R.anim.slide_out_left);
 			}
 		});
 		view_apply = (Button) findViewById(R.id.view_apply);
@@ -103,7 +107,9 @@ public class SpotinfoActivity extends BaseActivity {
 				intent.putExtra("spot_id", spot_id);
 				intent.putExtra("address", address.getText().toString());
 				intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-				startActivity(intent);
+				startActivityForResult(intent,1211);
+				overridePendingTransition(R.anim.slide_in_right,
+						R.anim.slide_out_left);
 			}
 		});
 /*		update = (Button) findViewById(R.id.update);

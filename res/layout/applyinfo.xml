@@ -27,14 +27,13 @@
             style="@style/BarTitle"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:layout_toRightOf="@id/back"
             android:gravity="center"
             android:text="@string/action_apply_detail" />
 
         <Button
             android:id="@+id/remove"
             style="@style/ButtonTitle"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_alignParentRight="true"
             android:background="@android:color/transparent"

@@ -17,11 +17,14 @@ public final class R {
         public static final int abc_slide_out_top=0x7f040005;
         public static final int alpha_in=0x7f040006;
         public static final int alpha_out=0x7f040007;
-        public static final int slide_bottom_in=0x7f040008;
-        public static final int slide_bottom_out=0x7f040009;
-        public static final int slide_left_out=0x7f04000a;
-        public static final int slide_right_in=0x7f04000b;
-        public static final int slide_right_out=0x7f04000c;
+        public static final int slide_in_bottom=0x7f040008;
+        public static final int slide_in_left=0x7f040009;
+        public static final int slide_in_right=0x7f04000a;
+        public static final int slide_in_top=0x7f04000b;
+        public static final int slide_out_bottom=0x7f04000c;
+        public static final int slide_out_left=0x7f04000d;
+        public static final int slide_out_right=0x7f04000e;
+        public static final int slide_out_top=0x7f04000f;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -1738,12 +1741,12 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0b002e;
         public static final int action_mode_bar_stub=0x7f0b002d;
         public static final int action_mode_close_button=0x7f0b0020;
-        public static final int action_settings=0x7f0b00c5;
+        public static final int action_settings=0x7f0b00c6;
         public static final int activity_chooser_view_content=0x7f0b0021;
         public static final int add_comment=0x7f0b006b;
         public static final int addapply=0x7f0b0095;
         public static final int address=0x7f0b0065;
-        public static final int addressinfo=0x7f0b00bc;
+        public static final int addressinfo=0x7f0b00bd;
         public static final int addspot=0x7f0b0099;
         public static final int addspot_nextstep=0x7f0b0059;
         public static final int addspot_save=0x7f0b005b;
@@ -1789,7 +1792,7 @@ containing a value of this type.
         public static final int dropdown=0x7f0b001a;
         public static final int edit_query=0x7f0b0033;
         public static final int end=0x7f0b001c;
-        public static final int exchange=0x7f0b00b6;
+        public static final int exchange=0x7f0b00b7;
         public static final int expand_activities_button=0x7f0b0022;
         public static final int expanded_menu=0x7f0b0028;
         public static final int fadein=0x7f0b003f;
@@ -1797,6 +1800,7 @@ containing a value of this type.
         public static final int fliph=0x7f0b0048;
         public static final int flipv=0x7f0b0049;
         public static final int good=0x7f0b0052;
+        public static final int gotomypage=0x7f0b00b5;
         public static final int home=0x7f0b0000;
         public static final int homeAsUp=0x7f0b000e;
         public static final int icon=0x7f0b0026;
@@ -1829,22 +1833,22 @@ containing a value of this type.
         public static final int parentPanel=0x7f0b0082;
         public static final int parking_code=0x7f0b005e;
         public static final int parking_info_title=0x7f0b00a0;
-        public static final int parking_period=0x7f0b00bd;
+        public static final int parking_period=0x7f0b00be;
         public static final int parking_time_from=0x7f0b0072;
         public static final int parking_time_to=0x7f0b0073;
         public static final int parking_title=0x7f0b0058;
         public static final int parkingab=0x7f0b006d;
-        public static final int pass=0x7f0b00c7;
+        public static final int pass=0x7f0b00c8;
         public static final int password=0x7f0b008c;
         public static final int password2=0x7f0b00ac;
         public static final int period=0x7f0b0066;
         public static final int phone=0x7f0b00a2;
         public static final int point=0x7f0b00a3;
-        public static final int point_cost=0x7f0b00b8;
+        public static final int point_cost=0x7f0b00b9;
         public static final int point_exchange=0x7f0b00a5;
-        public static final int pointshoplist=0x7f0b00b5;
-        public static final int product_desc=0x7f0b00b9;
-        public static final int product_title=0x7f0b00b7;
+        public static final int pointshoplist=0x7f0b00b6;
+        public static final int product_desc=0x7f0b00ba;
+        public static final int product_title=0x7f0b00b8;
         public static final int progress_circular=0x7f0b0007;
         public static final int progress_content=0x7f0b0080;
         public static final int progress_horizontal=0x7f0b0008;
@@ -1856,7 +1860,7 @@ containing a value of this type.
         public static final int pull_to_refresh_updated_at=0x7f0b00ab;
         public static final int radio=0x7f0b002b;
         public static final int register=0x7f0b008e;
-        public static final int reject=0x7f0b00c6;
+        public static final int reject=0x7f0b00c7;
         public static final int remove=0x7f0b006c;
         public static final int rotatebottom=0x7f0b004a;
         public static final int rotateleft=0x7f0b004b;
@@ -1874,8 +1878,8 @@ containing a value of this type.
         public static final int searchspotbanner=0x7f0b00af;
         public static final int searchspotslist=0x7f0b00b0;
         public static final int shake=0x7f0b0047;
-        public static final int share=0x7f0b00c4;
-        public static final int share2=0x7f0b00c3;
+        public static final int share=0x7f0b00c5;
+        public static final int share2=0x7f0b00c4;
         public static final int shortcut=0x7f0b002a;
         public static final int showCustom=0x7f0b0010;
         public static final int showHome=0x7f0b0011;
@@ -1886,18 +1890,18 @@ containing a value of this type.
         public static final int slideright=0x7f0b0040;
         public static final int slidetop=0x7f0b0042;
         public static final int slit=0x7f0b004c;
-        public static final int smap=0x7f0b00c2;
+        public static final int smap=0x7f0b00c3;
         public static final int soso=0x7f0b0053;
         public static final int split_action_bar=0x7f0b0004;
         public static final int spot_owner=0x7f0b0067;
-        public static final int spotapplybanner=0x7f0b00ba;
-        public static final int spotapplylist=0x7f0b00bb;
+        public static final int spotapplybanner=0x7f0b00bb;
+        public static final int spotapplylist=0x7f0b00bc;
         public static final int spotbanner=0x7f0b0094;
         public static final int spotstep1tab=0x7f0b0057;
         public static final int spotstep2_title=0x7f0b004f;
         public static final int spotstep2tab=0x7f0b004d;
         public static final int start_parking=0x7f0b0069;
-        public static final int state=0x7f0b00be;
+        public static final int state=0x7f0b00bf;
         public static final int status=0x7f0b0098;
         public static final int stop_parking=0x7f0b006a;
         public static final int submit_area=0x7f0b003c;
@@ -1911,17 +1915,17 @@ containing a value of this type.
         public static final int toggleApply=0x7f0b006e;
         public static final int topPanel=0x7f0b0083;
         public static final int up=0x7f0b0001;
-        public static final int update=0x7f0b00bf;
+        public static final int update=0x7f0b00c0;
         public static final int useLogo=0x7f0b0013;
         public static final int userinfo_save=0x7f0b00a1;
         public static final int username=0x7f0b0077;
         public static final int view1=0x7f0b0091;
         public static final int view2=0x7f0b0092;
         public static final int view3=0x7f0b0093;
-        public static final int view_apply=0x7f0b00c0;
+        public static final int view_apply=0x7f0b00c1;
         public static final int view_comment=0x7f0b0068;
         public static final int view_comment_btn=0x7f0b00b2;
-        public static final int view_map=0x7f0b00c1;
+        public static final int view_map=0x7f0b00c2;
         public static final int viewpage=0x7f0b008f;
         public static final int withText=0x7f0b0018;
         public static final int wrap_content=0x7f0b0009;
@@ -2079,127 +2083,128 @@ containing a value of this type.
         /**  Content description for the Toolbar icon used to collapse an expanded action mode. [CHAR LIMIT=NONE] 
          */
         public static final int abc_toolbar_collapse_description=0x7f070007;
-        public static final int action_apply_detail=0x7f07002b;
-        public static final int action_comment=0x7f07002c;
-        public static final int action_myapply_title=0x7f070027;
-        public static final int action_myspot_title=0x7f070029;
+        public static final int action_apply_detail=0x7f07002c;
+        public static final int action_comment=0x7f07002d;
+        public static final int action_myapply_title=0x7f070028;
+        public static final int action_myspot_title=0x7f07002a;
         /**  action bar text 
          */
-        public static final int action_parking_title=0x7f070028;
-        public static final int action_searchspot_title=0x7f07005b;
-        public static final int action_setting=0x7f07003d;
-        public static final int action_settings=0x7f070026;
-        public static final int action_shop_title=0x7f07002e;
-        public static final int action_spot_choose=0x7f07003a;
-        public static final int action_spot_confirm=0x7f07003c;
-        public static final int action_spot_detail=0x7f07002d;
-        public static final int action_spotapply_title=0x7f07002a;
-        public static final int add=0x7f070037;
-        public static final int add_comment=0x7f070077;
-        public static final int addapply=0x7f070024;
-        public static final int address=0x7f07003e;
-        public static final int addspot=0x7f070025;
+        public static final int action_parking_title=0x7f070029;
+        public static final int action_searchspot_title=0x7f07005c;
+        public static final int action_setting=0x7f07003e;
+        public static final int action_settings=0x7f070027;
+        public static final int action_shop_title=0x7f07002f;
+        public static final int action_spot_choose=0x7f07003b;
+        public static final int action_spot_confirm=0x7f07003d;
+        public static final int action_spot_detail=0x7f07002e;
+        public static final int action_spotapply_title=0x7f07002b;
+        public static final int add=0x7f070038;
+        public static final int add_comment=0x7f070078;
+        public static final int addapply=0x7f070025;
+        public static final int address=0x7f07003f;
+        public static final int addspot=0x7f070026;
         public static final int agree=0x7f07001f;
-        public static final int all=0x7f07007b;
+        public static final int all=0x7f07007c;
         public static final int app_name=0x7f070000;
-        public static final int apply=0x7f070023;
-        public static final int apply_amount=0x7f070043;
-        public static final int apply_state_applying=0x7f070055;
-        public static final int apply_state_approved=0x7f070057;
-        public static final int apply_state_expired=0x7f07005a;
-        public static final int apply_state_fail=0x7f070059;
+        public static final int apply=0x7f070024;
+        public static final int apply_amount=0x7f070044;
+        public static final int apply_state_applying=0x7f070056;
+        public static final int apply_state_approved=0x7f070058;
+        public static final int apply_state_expired=0x7f07005b;
+        public static final int apply_state_fail=0x7f07005a;
         /**  related apply state 
          */
-        public static final int apply_state_normal=0x7f070054;
-        public static final int apply_state_success=0x7f070058;
-        public static final int apply_state_waitforconfirm=0x7f070056;
-        public static final int attitude=0x7f07007a;
-        public static final int availableTime=0x7f070045;
-        public static final int availableTimeDesc=0x7f070046;
-        public static final int bad=0x7f07007e;
+        public static final int apply_state_normal=0x7f070055;
+        public static final int apply_state_success=0x7f070059;
+        public static final int apply_state_waitforconfirm=0x7f070057;
+        public static final int attitude=0x7f07007b;
+        public static final int availableTime=0x7f070046;
+        public static final int availableTimeDesc=0x7f070047;
+        public static final int bad=0x7f07007f;
         public static final int cancel=0x7f07001e;
-        public static final int city=0x7f070067;
-        public static final int city_desc=0x7f070068;
+        public static final int city=0x7f070068;
+        public static final int city_desc=0x7f070069;
         public static final int confirm=0x7f07001c;
         public static final int confirm2=0x7f07001d;
         public static final int costomview=0x7f070002;
-        public static final int desc=0x7f070047;
-        public static final int exchange=0x7f07006c;
-        public static final int good=0x7f07007c;
+        public static final int desc=0x7f070048;
+        public static final int exchange=0x7f07006d;
+        public static final int good=0x7f07007d;
+        public static final int goto_mypage=0x7f070023;
         public static final int hello_world=0x7f070001;
-        public static final int input_city=0x7f070069;
-        public static final int input_password=0x7f07005f;
-        public static final int input_phone=0x7f070061;
-        public static final int input_repassword=0x7f070060;
-        public static final int input_username=0x7f07005e;
-        public static final int latlng=0x7f07003f;
-        public static final int listenZone=0x7f070044;
-        public static final int lnglat_change=0x7f070042;
-        public static final int loading_data=0x7f07005d;
+        public static final int input_city=0x7f07006a;
+        public static final int input_password=0x7f070060;
+        public static final int input_phone=0x7f070062;
+        public static final int input_repassword=0x7f070061;
+        public static final int input_username=0x7f07005f;
+        public static final int latlng=0x7f070040;
+        public static final int listenZone=0x7f070045;
+        public static final int lnglat_change=0x7f070043;
+        public static final int loading_data=0x7f07005e;
         public static final int login=0x7f070017;
-        public static final int logout=0x7f07006d;
-        public static final int menu_apply=0x7f07004a;
-        public static final int menu_myspot=0x7f070049;
+        public static final int logout=0x7f07006e;
+        public static final int menu_apply=0x7f07004b;
+        public static final int menu_myspot=0x7f07004a;
         /**   bottom menu 
          */
-        public static final int menu_parking=0x7f070048;
-        public static final int menu_setting=0x7f07004b;
-        public static final int myapply_title=0x7f07002f;
-        public static final int net_not_available=0x7f07005c;
-        public static final int not_found_address_unsaveable=0x7f07004c;
-        public static final int parking_apply=0x7f070033;
-        public static final int parking_apply_cancel=0x7f070034;
-        public static final int parking_apply_start=0x7f070035;
-        public static final int parking_apply_stop=0x7f070036;
+        public static final int menu_parking=0x7f070049;
+        public static final int menu_setting=0x7f07004c;
+        public static final int myapply_title=0x7f070030;
+        public static final int net_not_available=0x7f07005d;
+        public static final int not_found_address_unsaveable=0x7f07004d;
+        public static final int parking_apply=0x7f070034;
+        public static final int parking_apply_cancel=0x7f070035;
+        public static final int parking_apply_start=0x7f070036;
+        public static final int parking_apply_stop=0x7f070037;
         /**  parking options area 
          */
-        public static final int parking_area=0x7f070030;
-        public static final int parking_code=0x7f070040;
-        public static final int parking_code_show=0x7f070041;
-        public static final int parking_period=0x7f07006e;
-        public static final int parking_period_label=0x7f07006f;
-        public static final int parking_time=0x7f070031;
-        public static final int parking_to=0x7f070032;
-        public static final int phone=0x7f070065;
-        public static final int phone_desc=0x7f070066;
-        public static final int points=0x7f07006a;
-        public static final int points_exchange=0x7f07006b;
+        public static final int parking_area=0x7f070031;
+        public static final int parking_code=0x7f070041;
+        public static final int parking_code_show=0x7f070042;
+        public static final int parking_period=0x7f07006f;
+        public static final int parking_period_label=0x7f070070;
+        public static final int parking_time=0x7f070032;
+        public static final int parking_to=0x7f070033;
+        public static final int phone=0x7f070066;
+        public static final int phone_desc=0x7f070067;
+        public static final int points=0x7f07006b;
+        public static final int points_exchange=0x7f07006c;
         public static final int pull_to_refresh_pull_label=0x7f070013;
         public static final int pull_to_refresh_refreshing_label=0x7f070015;
         public static final int pull_to_refresh_release_label=0x7f070014;
         public static final int pull_to_refresh_tap_label=0x7f070016;
-        public static final int refresh=0x7f070038;
+        public static final int refresh=0x7f070039;
         public static final int register=0x7f070018;
         public static final int reject=0x7f070020;
-        public static final int remove=0x7f070039;
+        public static final int remove=0x7f07003a;
         public static final int save=0x7f07001a;
         public static final int search=0x7f070021;
         public static final int search_parking=0x7f070022;
-        public static final int soso=0x7f07007d;
-        public static final int spot_nextstep=0x7f07003b;
-        public static final int spot_owner=0x7f070070;
-        public static final int spot_owner_label=0x7f070071;
-        public static final int spot_state_applying=0x7f07004e;
-        public static final int spot_state_approved=0x7f070050;
-        public static final int spot_state_expired=0x7f070053;
-        public static final int spot_state_fail=0x7f070052;
+        public static final int soso=0x7f07007e;
+        public static final int spot_nextstep=0x7f07003c;
+        public static final int spot_owner=0x7f070071;
+        public static final int spot_owner_label=0x7f070072;
+        public static final int spot_state_applying=0x7f07004f;
+        public static final int spot_state_approved=0x7f070051;
+        public static final int spot_state_expired=0x7f070054;
+        public static final int spot_state_fail=0x7f070053;
         /**  spot status 
          */
-        public static final int spot_state_normal=0x7f07004d;
-        public static final int spot_state_success=0x7f070051;
-        public static final int spot_state_waitforconfirm=0x7f07004f;
-        public static final int start_parking=0x7f070078;
-        public static final int stop_parking=0x7f070079;
-        public static final int success_count=0x7f070072;
-        public static final int success_count_label=0x7f070073;
+        public static final int spot_state_normal=0x7f07004e;
+        public static final int spot_state_success=0x7f070052;
+        public static final int spot_state_waitforconfirm=0x7f070050;
+        public static final int start_parking=0x7f070079;
+        public static final int stop_parking=0x7f07007a;
+        public static final int success_count=0x7f070073;
+        public static final int success_count_label=0x7f070074;
         public static final int update=0x7f07001b;
-        public static final int username=0x7f070064;
-        public static final int view_apply=0x7f070074;
-        public static final int view_comment=0x7f070075;
-        public static final int view_map=0x7f070076;
+        public static final int username=0x7f070065;
+        public static final int view_apply=0x7f070075;
+        public static final int view_comment=0x7f070076;
+        public static final int view_map=0x7f070077;
         public static final int want_toregister=0x7f070019;
-        public static final int welcome_login=0x7f070062;
-        public static final int welcome_register=0x7f070063;
+        public static final int welcome_login=0x7f070063;
+        public static final int welcome_register=0x7f070064;
     }
     public static final class style {
         public static final int AnimAlphaInOut=0x7f08010b;
@@ -2466,11 +2471,6 @@ containing a value of this type.
         /** 
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-
-
-
-
-
 
 
 

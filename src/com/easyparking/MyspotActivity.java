@@ -51,8 +51,9 @@ public class MyspotActivity extends BaseActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.myspot);
 	}
-	public void initialize(){
-		if(!isInit){
+
+	public void initialize() {
+		if (!isInit) {
 			toolbar = (RelativeLayout) findViewById(R.id.spotbanner);
 			uid = Helper.getUid(this);
 			resources = getResources();
@@ -62,6 +63,7 @@ public class MyspotActivity extends BaseActivity {
 			isInit = true;
 		}
 	}
+
 	public void initBtns() {
 		Button abtn = (Button) findViewById(R.id.addspot);
 		abtn.setOnClickListener(new View.OnClickListener() {
@@ -78,6 +80,8 @@ public class MyspotActivity extends BaseActivity {
 				Intent intent = new Intent(MyspotActivity.this,
 						Addpos1Activity.class);
 				getParent().startActivityForResult(intent, 200);
+				getParent().overridePendingTransition(R.anim.slide_in_right,
+						R.anim.slide_out_left);
 			}
 
 		});
@@ -114,21 +118,23 @@ public class MyspotActivity extends BaseActivity {
 					int position, long id) {
 				// TODO Auto-generated method stub
 				// myspotsList.setItemChecked(position, true);
-				if(getColBooleanByKey(position,"new_apply")){
-					//go to spot's apply page directly
+				if (getColBooleanByKey(position, "new_apply")) {
+					// go to spot's apply page directly
 					Intent intent = new Intent(MyspotActivity.this,
 							SpotapplyActivity.class);
 					intent.putExtra("spot_id", getColDataByKey(position, "_id"));
-					intent.putExtra("address",getColDataByKey(position,"address"));
+					intent.putExtra("address",
+							getColDataByKey(position, "address"));
 					getParent().startActivityForResult(intent, 210);
-					
-				}
-				else{
+
+				} else {
 					Intent intent = new Intent(MyspotActivity.this,
 							SpotinfoActivity.class);
 					intent.putExtra("spot_id", getColDataByKey(position, "_id"));
 					getParent().startActivityForResult(intent, 210);
 				}
+				getParent().overridePendingTransition(R.anim.slide_in_right,
+						R.anim.slide_out_left);
 			}
 		});
 	}
@@ -307,12 +313,14 @@ public class MyspotActivity extends BaseActivity {
 				// JSONObject loc;
 				holder.address = (TextView) convertView
 						.findViewById(R.id.myspot_address);
-				holder.rating = (RatingBar) convertView.findViewById(R.id.myspot_rating);
+				holder.rating = (RatingBar) convertView
+						.findViewById(R.id.myspot_rating);
 				holder.state = (TextView) convertView
 						.findViewById(R.id.myspot_state);
 				holder.apply_count = (TextView) convertView
 						.findViewById(R.id.myspot_apply_amount);
-				holder.desc = (TextView) convertView.findViewById(R.id.myspot_desc);
+				holder.desc = (TextView) convertView
+						.findViewById(R.id.myspot_desc);
 				convertView.setTag(holder);
 
 			} else {
@@ -322,23 +330,23 @@ public class MyspotActivity extends BaseActivity {
 			final JSONObject row;
 			try {
 				row = listdata.getJSONObject(position);
-				holder.address.setText(row.getString("address")+"("+row.getString("code")+")");
-				//showErrorMessage(row.getDouble("rating")+"");
-				holder.rating.setRating((float)row.getDouble("rating"));
+				holder.address.setText(row.getString("address") + "("
+						+ row.getString("code") + ")");
+				// showErrorMessage(row.getDouble("rating")+"");
+				holder.rating.setRating((float) row.getDouble("rating"));
 				holder.state.setBackgroundColor(resources.getColor(resources
 						.getIdentifier("Status_" + row.getString("state"),
 								"color", getPackageName())));
 				holder.state.setText(SpotStatus.get(row.getString("state")));
 				holder.desc.setText(row.getString("desc"));
 				boolean n = row.getBoolean("new_apply");
-				if(n){
+				if (n) {
 					holder.apply_count.setText("新");
 					holder.apply_count.setPadding(4, 4, 4, 4);
-				}
-				else{
+				} else {
 					holder.apply_count.setPadding(0, 0, 0, 0);
 				}
-				//holder.apply_count.setText(row.getString("apply_count"));
+				// holder.apply_count.setText(row.getString("apply_count"));
 				// holder.remove.setOnClickListener(new View.OnClickListener() {
 				// @Override
 				// public void onClick(View v) {
@@ -387,12 +395,12 @@ public class MyspotActivity extends BaseActivity {
 		// TODO Auto-generated method stub
 		hideProgress();
 		switch (resultCode) {
-		//add spot/set apply status
+		// add spot/set apply status
 		case 201:
-		//remove spot
+			// remove spot
 		case 213:
-		
-		//case 211:
+
+			// case 211:
 			refreshData();
 			break;
 		}

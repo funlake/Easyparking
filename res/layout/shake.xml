@@ -8,7 +8,6 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:gravity="center_vertical"
         android:background="@android:color/transparent" >
 
         <Button
@@ -19,7 +18,20 @@
                 android:background="@drawable/bggreen"
                 android:padding="8dp"
                 android:layout_margin="10dp"
+                android:layout_alignParentBottom="true"
                 android:text="@string/search_parking" >
+        </Button>
+        <Button
+                android:id="@+id/gotomypage"
+                style="@style/ButtonTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgorange"
+                android:padding="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+				android:layout_above="@id/search_pos"
+                android:text="@string/goto_mypage" >
         </Button>
     </RelativeLayout>
 

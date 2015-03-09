@@ -87,7 +87,7 @@ public class ProfilerActivity extends BaseActivity implements OnGeocodeSearchLis
 										"userid", "");
 								Helper.saveSetting(ProfilerActivity.this,
 										"clientid", "");
-								Config.core.stopRefreshService();
+//								Config.core.stopRefreshService();
 								activityLogout();
 								startActivity(new Intent(ProfilerActivity.this,
 										LoginActivity.class));
@@ -157,7 +157,7 @@ public class ProfilerActivity extends BaseActivity implements OnGeocodeSearchLis
 			// Toast.makeText(MyspotActivity.this, "hehe",
 			// Toast.LENGTH_LONG).show();
 			// finish();
-			Config.myapply.stopRefreshService();
+//			Config.myapply.stopRefreshService();
 			Config.core.onBackPressed();
 		}
 		return true;

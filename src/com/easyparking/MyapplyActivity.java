@@ -21,7 +21,6 @@ import com.easyparking.helper.Helper;
 import com.easyparking.helper.HttpCallback;
 import com.easyparking.helper.HttpRequest;
 import com.easyparking.helper.Config;
-import com.easyparking.service.RefreshdataService;
 import com.markupartist.android.widget.PullToRefreshListView;
 import com.markupartist.android.widget.PullToRefreshListView.OnRefreshListener;
 
@@ -63,6 +62,8 @@ public class MyapplyActivity extends BaseActivity {
 						ChooseposActivity.class);
 				intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 				getParent().startActivityForResult(intent, 200);
+				getParent().overridePendingTransition(R.anim.slide_in_right,
+						R.anim.slide_out_left);
 			}
 		});
 	}
@@ -87,6 +88,8 @@ public class MyapplyActivity extends BaseActivity {
 					intent.putExtra("apply_state", state);
 					getParent().startActivityForResult(intent, 110);
 				//}
+					getParent().overridePendingTransition(R.anim.slide_in_right,
+							R.anim.slide_out_left);
 			}
 		});
 		myapplylist.setOnRefreshListener(new OnRefreshListener() {
