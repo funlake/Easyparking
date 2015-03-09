@@ -36,18 +36,18 @@
         android:layout_weight="90"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
+        android:id="@+id/firststep"
         android:orientation="vertical" >
 
         <EditText
-            android:id="@+id/username"
+            android:id="@+id/phone"
             style="@style/Input"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:background="@drawable/form_input"
-            android:hint="@string/input_username"
+            android:hint="@string/phone"
             android:minHeight="40dp" />
-
         <EditText
             android:id="@+id/password"
             style="@style/Input"
@@ -57,27 +57,6 @@
             android:background="@drawable/form_input"
             android:hint="@string/input_password"
             android:minHeight="40dp" />
-
-        <EditText
-            android:id="@+id/password2"
-            style="@style/Input"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/form_input"
-            android:hint="@string/input_repassword"
-            android:minHeight="40dp" />
-
-        <EditText
-            android:id="@+id/phone"
-            style="@style/Input"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/form_input"
-            android:hint="@string/input_phone"
-            android:minHeight="40dp" />
-
         <EditText
             android:id="@+id/city"
             style="@style/Input"
@@ -96,7 +75,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/bgorange"
             android:padding="8dp"
-            android:text="@string/register" />
+            android:text="@string/nextstep" />
     </LinearLayout>
 
 </LinearLayout>

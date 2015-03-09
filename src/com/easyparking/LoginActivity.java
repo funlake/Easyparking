@@ -8,14 +8,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import com.easyparking.helper.Helper;
 import com.easyparking.helper.HttpCallback;
 import com.easyparking.helper.HttpRequest;
-public class LoginActivity extends BaseActivity {
+public class LoginActivity extends DetailActivity {
 	private EditText username;
 	private EditText password;
 	private Button login;
+	private ImageButton back;
 	private Button register;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -29,6 +31,15 @@ public class LoginActivity extends BaseActivity {
 		initBtns();
 	}
 	public void initBtns(){
+		back = (ImageButton) findViewById(R.id.back);
+		back.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				finish();
+			}
+		});
 		login = (Button) findViewById(R.id.login);
 		login.setOnClickListener(new View.OnClickListener() {
 			@Override
@@ -77,20 +88,23 @@ public class LoginActivity extends BaseActivity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				showProgress("转向注册页面中...");
+//				showProgress("转向注册页面中...");
 				Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
 				startActivityForResult(intent, 10);
+				overridePendingTransition(R.anim.slide_in_right,
+						R.anim.slide_out_left);
 			}
 		});
 	}
-	@Override
-	protected void onActivityResult(int requestCode, int resultCode, Intent data){
-		
-		if(resultCode == 11){
-			String u = data.getExtras().getString("registered_name");
-			username.setText(u.toString());
-			password.requestFocus();
-		}
-		hideProgress();
-	}
+//	@Override
+//	protected void onActivityResult(int requestCode, int resultCode, Intent data){
+//		
+//		if(resultCode == 11){
+//			String u = data.getExtras().getString("registered_name");
+//			username.setText(u.toString());
+//			password.requestFocus();
+//		}
+//		hideProgress();
+//		super.onActivityResult(requestCode, resultCode, data);
+//	}
 }

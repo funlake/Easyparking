@@ -39,14 +39,14 @@
             android:background="@drawable/gbutton"
             android:text="@string/remove" />
 
-        <Button
+<!--         <Button
             android:id="@+id/update"
             style="@style/ButtonTitle"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_toLeftOf="@id/remove"
             android:background="@drawable/gbutton"
-            android:text="@string/update" />
+            android:text="@string/update" /> -->
     </RelativeLayout>
 
     <ScrollView

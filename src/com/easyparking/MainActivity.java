@@ -110,7 +110,7 @@ public class MainActivity extends BaseActivity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				pager.setCurrentItem(0);
+				pager.setCurrentItem(0,true);
 				view1.setBackgroundDrawable(resource.getDrawable(R.drawable.bghl));
 				view2.setBackgroundDrawable(resource.getDrawable(R.drawable.bg));
 				view3.setBackgroundDrawable(resource.getDrawable(R.drawable.bg));
@@ -124,7 +124,7 @@ public class MainActivity extends BaseActivity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				pager.setCurrentItem(1);
+				pager.setCurrentItem(1,true);
 				Config.myspot.initialize();
 				view1.setBackgroundDrawable(resource.getDrawable(R.drawable.bg));
 				view2.setBackgroundDrawable(resource.getDrawable(R.drawable.bghl));
@@ -138,7 +138,7 @@ public class MainActivity extends BaseActivity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				pager.setCurrentItem(2);
+				pager.setCurrentItem(2,true);
 				view1.setBackgroundDrawable(resource.getDrawable(R.drawable.bg));
 				view2.setBackgroundDrawable(resource.getDrawable(R.drawable.bg));
 				view3.setBackgroundDrawable(resource.getDrawable(R.drawable.bghl));

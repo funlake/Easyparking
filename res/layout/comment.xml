@@ -9,7 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="10"
-        android:background="@color/Mainbg"
+        android:background="@drawable/bg"
         android:gravity="center"
         android:orientation="horizontal" >
 

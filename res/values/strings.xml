@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">停车易</string>
-    <string name="login">登陆</string>
+    <string name="login">登录</string>
     <string name="register">注册</string>
     <string name="want_toregister">注册新账号</string>
     <string name="save">保存</string>
@@ -41,7 +41,7 @@
 	<string name="refresh">刷新</string>
 	<string name="remove">删除</string>
 	<string name="action_spot_choose">选择地点</string>
-	<string name="spot_nextstep">下一步</string>
+	<string name="nextstep">下一步</string>
 	<string name="action_spot_confirm">确定车位</string>
 	<string name="action_setting">我的设置</string>
 	<string name="address">地址*</string>
@@ -85,7 +85,7 @@
 	<string name="net_not_available">无法连接网络,请检查您的网络设置</string>
 	<string name="loading_data">载入数据中...</string>
 	
-	<string name="input_username">请输入用户名</string>
+	<string name="input_username">请输入手机号</string>
 	<string name="input_password">请输入密码</string>
 	<string name="input_repassword">请再输入一次密码进行确认</string>
 	<string name="input_phone">请输入电话号码,方便与其他用户沟通</string>
@@ -95,8 +95,8 @@
 	<string name="phone">手机号码</string>
 	<string name="phone_desc">*填写手机号码,将方便申请人或车位主与您联系</string>
 	<string name="city">城区</string>
-	<string name="city_desc">*地图默认显示的位置(示例:广东省广州市海珠区)</string>
-	<string name="input_city">所属城区(示例:广东省广州市海珠区)</string>
+	<string name="city_desc">*地图默认显示的位置(比如:广东省广州市海珠区)</string>
+	<string name="input_city">所属城区(比如:广东省广州市海珠区)</string>
 	<string name="points">积分</string>
 	<string name="points_exchange">积分兑换</string>
 	<string name="exchange">兑换</string>

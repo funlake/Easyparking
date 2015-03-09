@@ -2,31 +2,60 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
     android:gravity="center"
     android:orientation="vertical" >
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/spotstep1tab"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:orientation="vertical" >
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/bghl"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back" />
 
         <TextView
-            style="@style/BigTitle"
+            android:id="@+id/login_title"
+            style="@style/BarTitle"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:gravity="center"
-            android:padding="8dp"
-            android:text="@string/welcome_login" />
+            android:text="@string/login" />
+
+        <Button
+            android:id="@+id/register"
+            style="@style/ButtonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:text="@string/register" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="90"
+        android:orientation="vertical" >
+
 
         <EditText
             android:id="@+id/username"
             style="@style/Input"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/form_input"
             android:hint="@string/input_username"
             android:minHeight="40dp" />
@@ -47,12 +76,12 @@
             style="@style/ButtonTitle"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/bgorange"
             android:padding="8dp"
             android:text="@string/login" />
 
-        <Button
+<!--         <Button
             android:id="@+id/register"
             style="@style/ButtonTitle"
             android:layout_width="fill_parent"
@@ -60,7 +89,7 @@
             android:layout_marginTop="4dp"
             android:background="@drawable/bgpurple"
             android:padding="8dp"
-            android:text="@string/want_toregister" />
+            android:text="@string/want_toregister" /> -->
     </LinearLayout>
 
 </LinearLayout>

@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 import com.amap.api.services.geocoder.GeocodeAddress;
 import com.amap.api.services.geocoder.GeocodeQuery;
@@ -19,24 +21,25 @@ import com.easyparking.helper.Helper;
 import com.easyparking.helper.HttpCallback;
 import com.easyparking.helper.HttpRequest;
 
-public class RegisterActivity extends BaseActivity implements OnGeocodeSearchListener {
+public class RegisterActivity extends DetailActivity implements OnGeocodeSearchListener {
 	private Button register;
 	private EditText username;
 	private EditText password;
 	private EditText password2;
 	private EditText phone;
 	private EditText city;
+	private LinearLayout firststep;
 	private GeocodeSearch geocoderSearch;
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.register);
+		setContentView(R.layout.register2);
 		initView();
 	}
 	
 	public void initView(){
-		username 	= (EditText) findViewById(R.id.username);
+//		username 	= (EditText) findViewById(R.id.username);
 		password 	= (EditText) findViewById(R.id.password);
-		password2	= (EditText) findViewById(R.id.password2);
+//		password2	= (EditText) findViewById(R.id.password2);
 		phone 		= (EditText) findViewById(R.id.phone);
 		city 		= (EditText) findViewById(R.id.city);
 		
@@ -45,32 +48,41 @@ public class RegisterActivity extends BaseActivity implements OnGeocodeSearchLis
 		initBtns();
 	}
 	public void initBtns(){
+		ImageButton back = (ImageButton) findViewById(R.id.back);
+		back.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				setResult(11);
+				finish();
+			}
+		});
 		register = (Button) findViewById(R.id.register);
 		register.setOnClickListener(new View.OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
-				if(username.getText().toString().equals("")){
-					showErrorMessage("请输入注册用户名!");
-				}
-				else if(password.getText().toString().equals("")){
-					showErrorMessage("请输入密码!");
-				}
-				else if(!password.getText().toString().equals(password2.getText().toString())){
-					showErrorMessage("请保证密码一致!");
-				}
-				else if(phone.getText().toString().equals("")){
-					showErrorMessage("请填写联系电话!");
-				}
-				else if(city.getText().toString().equals("")){
-					showErrorMessage("请填写您所属的城区");
-				}
-				else{
-					showProgress("获取城区坐标中...");
-					GeocodeQuery query = new GeocodeQuery(city.getText().toString(), null);// 第一个参数表示地址，第二个参数表示查询城市，中文或者中文全拼，citycode、adcode，
-					geocoderSearch.getFromLocationNameAsyn(query);// 设置同步地理编码请求
-
-				}
+				firststep = (LinearLayout) findViewById(R.id.firststep);
+				firststep.animate().setDuration(400).translationXBy(-1000).start();
+				
+//				if(phone.getText().toString().equals("")){
+//					showErrorMessage("请填写手机号码!");
+//				}
+//				else if(password.getText().toString().equals("")){
+//					showErrorMessage("请输入密码!");
+//				}
+//				else if(city.getText().toString().equals("")){
+//					showErrorMessage("请填写您所属的城区");
+//				}
+//				else{
+//					showProgress("获取城区坐标中...");
+//					GeocodeQuery query = new GeocodeQuery(city.getText().toString(), null);// 第一个参数表示地址，第二个参数表示查询城市，中文或者中文全拼，citycode、adcode，
+//					geocoderSearch.getFromLocationNameAsyn(query);// 设置同步地理编码请求
+//					
+//
+//				}
+				
 				// TODO Auto-generated method stub
 
 			}
