@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical" >
+
     <RelativeLayout
         android:id="@+id/spotstep1tab"
         android:layout_width="fill_parent"
@@ -30,73 +31,20 @@
             android:gravity="center"
             android:text="@string/register" />
     </RelativeLayout>
-    <LinearLayout
+
+    <com.easyparking.views.WizardView
+        android:id="@+id/wizardview"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="90"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:orientation="vertical" >
+        android:layout_weight="90" >
 
-        <EditText
-            android:id="@+id/username"
-            style="@style/Input"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/form_input"
-            android:hint="@string/input_username"
-            android:minHeight="40dp" />
+        <LinearLayout
+            android:id="@+id/wizard"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
 
-        <EditText
-            android:id="@+id/password"
-            style="@style/Input"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/form_input"
-            android:hint="@string/input_password"
-            android:minHeight="40dp" />
-
-        <EditText
-            android:id="@+id/password2"
-            style="@style/Input"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/form_input"
-            android:hint="@string/input_repassword"
-            android:minHeight="40dp" />
-
-        <EditText
-            android:id="@+id/phone"
-            style="@style/Input"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/form_input"
-            android:hint="@string/input_phone"
-            android:minHeight="40dp" />
-
-        <EditText
-            android:id="@+id/city"
-            style="@style/Input"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/form_input"
-            android:hint="@string/input_city"
-            android:minHeight="40dp" />
-
-        <Button
-            android:id="@+id/register"
-            style="@style/ButtonTitle"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/bgorange"
-            android:padding="8dp"
-            android:text="@string/register" />
-    </LinearLayout>
+        </LinearLayout>
+    </com.easyparking.views.WizardView>
 
 </LinearLayout>

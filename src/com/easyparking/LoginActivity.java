@@ -14,7 +14,7 @@ import com.easyparking.helper.Helper;
 import com.easyparking.helper.HttpCallback;
 import com.easyparking.helper.HttpRequest;
 public class LoginActivity extends DetailActivity {
-	private EditText username;
+	private EditText phone;
 	private EditText password;
 	private Button login;
 	private ImageButton back;
@@ -26,7 +26,7 @@ public class LoginActivity extends DetailActivity {
 		
 	}
 	public void initView(){
-		username = (EditText) findViewById(R.id.username);
+		phone = (EditText) findViewById(R.id.username);
 		password = (EditText) findViewById(R.id.password);
 		initBtns();
 	}
@@ -77,7 +77,7 @@ public class LoginActivity extends DetailActivity {
 					}
 					
 				}).execute("/user_login","POST",
-						"user="+username.getText().toString()+
+						"phone="+phone.getText().toString()+
 						"&pass="+password.getText().toString()
 				);
 				hideProgress();
