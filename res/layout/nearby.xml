@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/nearbytitle"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/bghl"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/BarTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/nearby_title" />
+
+        <Button
+            android:id="@+id/gotomypage"
+            style="@style/ButtonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:text="@string/my" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90" >
+
+        <!--
+             <ListView
+            android:id="@+id/nearbylist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="8dp"
+            android:divider="@color/Lightgrey"
+            android:dividerHeight="6dp" />
+        -->
+
+        <com.amap.api.maps2d.MapView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/nearbymap"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -4,6 +4,7 @@
     <string name="app_name">停车易</string>
     <string name="login">登录</string>
     <string name="register">注册</string>
+    <string name="nearby_title">附近车位</string>
     <string name="verify_code">验证码</string>
     <string name="want_toregister">注册新账号</string>
     <string name="save">保存</string>
@@ -15,7 +16,7 @@
      <string name="reject">拒绝</string>
     <string name="search">搜索</string>
     <string name="search_parking">搜索车位</string>
-    <string name="goto_mypage">我的主页</string>
+    <string name="my">我的</string>
     <string name="apply">申请</string>
     <string name="addapply">申请车位</string>
     <string name="addspot">添加车位</string>

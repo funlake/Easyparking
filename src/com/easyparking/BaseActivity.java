@@ -64,7 +64,21 @@ public class BaseActivity extends Activity {
 		toast.setView(layout);
 		toast.show();
 	}
+	public void showInfoMessage(String msg) {
+		LayoutInflater inflater = getLayoutInflater();
+		View layout = inflater.inflate(R.layout.custom_info_toast,
+				(ViewGroup) findViewById(R.id.toast_layout_root));
 
+		TextView text = (TextView) layout.findViewById(R.id.text);
+		text.setText(msg);
+
+		Toast toast = new Toast(this);
+		// toast.setText(msg);
+		toast.setGravity(Gravity.BOTTOM, 0, 150);
+		toast.setDuration(Toast.LENGTH_LONG);
+		toast.setView(layout);
+		toast.show();
+	}
 	View.OnClickListener CFM_CANCELCB = new View.OnClickListener() {
 
 		@Override

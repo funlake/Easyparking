@@ -60,8 +60,8 @@ public final class R {
 	}
 	public static final class layout {
 		public static final int activity_main = 0x7f030017;
-		public static final int custom_view = 0x7f030027;
-		public static final int dialog_layout = 0x7f030028;
+		public static final int custom_view = 0x7f030028;
+		public static final int dialog_layout = 0x7f030029;
 	}
 	public static final class string {
 		public static final int app_name = 0x7f070000;
